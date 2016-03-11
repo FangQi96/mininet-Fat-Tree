@@ -4,7 +4,8 @@ Mininet-Fat-Tree is written by python language base on Mininet emulator that cre
     
 How it works:
 
-        This project first creates 3 layer switches (Core, Aggregation, Edge) and hosts then contects them to each other base on some            equations. 
+        This project first creates 3 layer switches (Core, Aggregation, Edge)
+        and hosts then contects them to each other base on some equations. 
     
 How it runs:
 
