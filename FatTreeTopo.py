@@ -32,9 +32,7 @@ class SingleSwitchTopo(Topo):
         self.addCoreSwitches()
         self.addHosts()
         self.addLinks()
-        
-        #s1 = self.addSwitch( 's1', ip='192.168.24.100', dpid='00:00:00:00:00:00:01:00' )
-        # dpid='0000000000000100'        
+       
     def addCoreSwitches(self):
         k=self.options.kterm
         for x in range(0,(k/2)**2):
@@ -92,7 +90,6 @@ class SingleSwitchTopo(Topo):
         temp=12-len(hex(self.dpid)[2:])
         for i in range(0,temp):
             paddTo12+= '0'
-        #b=paddTo16+hex(self.dpid)[2:]    
         return paddTo12+hex(self.dpid)[2:]
          
 
@@ -111,16 +108,7 @@ def simpleTest():
     
     for i in range(0,len(hosts)):
         hst.append(net.get('H'+str(i)))
-        
 
-    
-        
-    
-    #h1 = net.get('h1')
-    #h0 = net.get('h0')
-    #h1.cmd('python -m SimpleHTTPServer 80 &')
-    #h1.cmd('sleep 3')
-    #h0.cmdPrint('wget -O - 10.0.0.2')
     CLI(net)
     net.stop()
 
