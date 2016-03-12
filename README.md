@@ -9,7 +9,7 @@ How it works:
     
 How it runs:
 
-        Copy this script to favorite location in linux machine and run bellow command:
+        Copy this script to s favorite location in your linux machine then run bellow command:
         $user@Mymachine# cd <your-directory>
         $user@mymachine:/<your-directory># sudo python FatTreeTopo.py
 
